@@ -1,3 +1,4 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -10,12 +11,12 @@ import javax.swing.JOptionPane;
  *
  * @author jaazi
  */
-public class FrmPagamento extends javax.swing.JFrame {
+public class FrmEscolherVoo extends javax.swing.JFrame {
 
     /**
      * Creates new form FrmReserva
      */
-    public FrmPagamento() {
+    public FrmEscolherVoo() {
         initComponents();
     }
 
@@ -75,13 +76,13 @@ public class FrmPagamento extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(86, 168, 163));
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_two_white_24dp.png"))); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_two_black_24dp.png"))); // NOI18N
         jLabel4.setText("Escolher Voo");
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_3_black_24dp.png"))); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_3_white_24dp.png"))); // NOI18N
         jLabel5.setText("Pagamento");
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -122,7 +123,7 @@ public class FrmPagamento extends javax.swing.JFrame {
             }
         });
 
-        cmdsairActionPerformed1.setText("Pagar");
+        cmdsairActionPerformed1.setText("Escolher Voo");
         cmdsairActionPerformed1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdsairActionPerformed1ActionPerformed(evt);
@@ -223,10 +224,10 @@ public class FrmPagamento extends javax.swing.JFrame {
 
     private void cmdsairActionPerformed1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdsairActionPerformed1ActionPerformed
         JOptionPane.showMessageDialog(rootPane, "Cadastrado com Sucesso!");
-        FrmHome home = new FrmHome();
-        home.setLocationRelativeTo(null);
+        FrmPagamento pag = new FrmPagamento();
+        pag.setLocationRelativeTo(null);
         this.dispose();
-        home.setVisible(true);
+        pag.setVisible(true);
     }//GEN-LAST:event_cmdsairActionPerformed1ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -255,18 +256,14 @@ public class FrmPagamento extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmPagamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmEscolherVoo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmPagamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmEscolherVoo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmPagamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmEscolherVoo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmPagamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmEscolherVoo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -275,7 +272,7 @@ public class FrmPagamento extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmPagamento().setVisible(true);
+                new FrmEscolherVoo().setVisible(true);
             }
         });
     }

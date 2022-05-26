@@ -225,12 +225,13 @@ public class FrmHome extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        JOptionPane.showMessageDialog(rootPane, "Este software foi Feito por \nJaaziel, "
-                + "Zenaide e Rubens, \ncujos telefones são: 88997010716, ..., ... ");
+        JOptionPane.showMessageDialog(rootPane, " Produzido por JAZA tech"
+                + "\n Email para contato:"
+                + "\n jaaziel.dev@gmail.com");
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        FrmReserva reserva = new FrmReserva();
+        FrmEscolherAssento reserva = new FrmEscolherAssento();
         reserva.setLocationRelativeTo(null);
         reserva.setVisible(true);
         this.dispose();
