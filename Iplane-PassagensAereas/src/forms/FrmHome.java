@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package forms;
 
 import javax.swing.JOptionPane;
@@ -32,9 +29,7 @@ public class FrmHome extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jDesktopPane1 = new javax.swing.JDesktopPane();
-        cmdsairActionPerformed = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        Deskpainel = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -45,7 +40,6 @@ public class FrmHome extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Iplane - Home");
-        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(96, 206, 231));
 
@@ -61,7 +55,7 @@ public class FrmHome extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 683, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(142, Short.MAX_VALUE))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -102,45 +96,19 @@ public class FrmHome extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jDesktopPane1.setBackground(new java.awt.Color(248, 248, 255));
-
-        cmdsairActionPerformed.setText("Sair");
-        cmdsairActionPerformed.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmdsairActionPerformedActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/airplane-1755.png"))); // NOI18N
-
-        jDesktopPane1.setLayer(cmdsairActionPerformed, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cmdsairActionPerformed, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35))
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(165, 165, 165)
-                .addComponent(jLabel3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        javax.swing.GroupLayout DeskpainelLayout = new javax.swing.GroupLayout(Deskpainel);
+        Deskpainel.setLayout(DeskpainelLayout);
+        DeskpainelLayout.setHorizontalGroup(
+            DeskpainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap(53, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(32, 32, 32)
-                .addComponent(cmdsairActionPerformed)
-                .addGap(28, 28, 28))
+        DeskpainelLayout.setVerticalGroup(
+            DeskpainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 644, Short.MAX_VALUE)
         );
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_work_black_24dp.png"))); // NOI18N
-        jMenu1.setText("Cadastrar");
+        jMenu1.setText("Arquivos ");
 
         jMenuItem1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_connecting_airports_black_24dp.png"))); // NOI18N
@@ -188,7 +156,7 @@ public class FrmHome extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jDesktopPane1)
+            .addComponent(Deskpainel)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,7 +165,7 @@ public class FrmHome extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jDesktopPane1))
+                .addComponent(Deskpainel))
         );
 
         pack();
@@ -211,27 +179,25 @@ public class FrmHome extends javax.swing.JFrame {
       
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void cmdsairActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdsairActionPerformedActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_cmdsairActionPerformedActionPerformed
-
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-       FrmCadastrarCliente cliente = new FrmCadastrarCliente();
-       cliente.setLocationRelativeTo(null);
-       cliente.setVisible(true);
-       this.dispose();
+       
+        FrmClientes cliente = new FrmClientes();
+        Deskpainel.add (cliente);
+        
+        cliente.show();
+        
         
         
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        JOptionPane.showMessageDialog(rootPane, " Produzido por JAZA tech"
+        JOptionPane.showMessageDialog(rootPane, " Produzido por JAZAtech"
                 + "\n Email para contato:"
                 + "\n jaaziel.dev@gmail.com");
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        FrmEscolherAssento reserva = new FrmEscolherAssento();
+        FrmEscolherVoo reserva = new FrmEscolherVoo();
         reserva.setLocationRelativeTo(null);
         reserva.setVisible(true);
         this.dispose();
@@ -274,11 +240,9 @@ public class FrmHome extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton cmdsairActionPerformed;
+    private javax.swing.JDesktopPane Deskpainel;
     private javax.swing.JButton jButton1;
-    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

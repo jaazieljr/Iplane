@@ -134,7 +134,7 @@ public class FrmCadastrarVoo extends javax.swing.JFrame {
             }
         });
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Qtd de Assentos", "336", "396", "410", "615" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Qtd de Assentos", "88" }));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel2.setText("Origem:");

@@ -1,4 +1,3 @@
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -38,6 +37,13 @@ public class FrmEscolherVoo extends javax.swing.JFrame {
         jDesktopPane1 = new javax.swing.JDesktopPane();
         cmdsairActionPerformed = new javax.swing.JButton();
         cmdsairActionPerformed1 = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jComboBox5 = new javax.swing.JComboBox<>();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jComboBox7 = new javax.swing.JComboBox<>();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -76,9 +82,9 @@ public class FrmEscolherVoo extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(86, 168, 163));
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_two_black_24dp.png"))); // NOI18N
-        jLabel4.setText("Escolher Voo");
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_two_white_24dp.png"))); // NOI18N
+        jLabel4.setText("Escolher Assento");
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -86,9 +92,9 @@ public class FrmEscolherVoo extends javax.swing.JFrame {
         jLabel5.setText("Pagamento");
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_one_white_24dp.png"))); // NOI18N
-        jLabel6.setText("Escolher Assento");
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_one_black_24dp.png"))); // NOI18N
+        jLabel6.setText("Escolher Voo");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -130,24 +136,90 @@ public class FrmEscolherVoo extends javax.swing.JFrame {
             }
         });
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CPF do Cliente", "x", "x", "x" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Origem", "Item 2", "Item 3", "Item 4" }));
+        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox3ActionPerformed(evt);
+            }
+        });
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Destino", "Item 2", "Item 3", "Item 4" }));
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Data", "Item 2", "Item 3", "Item 4" }));
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Valor", "Item 2", "Item 3", "Item 4" }));
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chegada", "Item 2", "Item 3", "Item 4" }));
+        jComboBox6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox6ActionPerformed(evt);
+            }
+        });
+
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Saída", "Item 2", "Item 3", "Item 4" }));
+
         jDesktopPane1.setLayer(cmdsairActionPerformed, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(cmdsairActionPerformed1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jComboBox1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jComboBox3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jComboBox2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jComboBox4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jComboBox5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jComboBox6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jComboBox7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cmdsairActionPerformed, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(cmdsairActionPerformed1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
+                .addContainerGap(510, Short.MAX_VALUE)
+                .addComponent(cmdsairActionPerformed, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(cmdsairActionPerformed1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28))
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox1, 0, 143, Short.MAX_VALUE)
+                            .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(88, 88, 88)
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                                .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(40, 40, 40)
+                                .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap(578, Short.MAX_VALUE)
+                .addGap(70, 70, 70)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(85, 85, 85)
+                .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 240, Short.MAX_VALUE)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cmdsairActionPerformed)
                     .addComponent(cmdsairActionPerformed1))
@@ -224,10 +296,10 @@ public class FrmEscolherVoo extends javax.swing.JFrame {
 
     private void cmdsairActionPerformed1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdsairActionPerformed1ActionPerformed
         JOptionPane.showMessageDialog(rootPane, "Cadastrado com Sucesso!");
-        FrmPagamento pag = new FrmPagamento();
-        pag.setLocationRelativeTo(null);
+        FrmEscolherAssento voo = new FrmEscolherAssento();
+        voo.setLocationRelativeTo(null);
         this.dispose();
-        pag.setVisible(true);
+        voo.setVisible(true);
     }//GEN-LAST:event_cmdsairActionPerformed1ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -238,6 +310,18 @@ public class FrmEscolherVoo extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(rootPane, "Este software foi Feito por \nJaaziel, "
             + "Zenaide e Rubens, \ncujos telefones são: 88997010716, ..., ... ");
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox3ActionPerformed
+
+    private void jComboBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -268,6 +352,10 @@ public class FrmEscolherVoo extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -280,6 +368,13 @@ public class FrmEscolherVoo extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cmdsairActionPerformed;
     private javax.swing.JButton cmdsairActionPerformed1;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox6;
+    private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

@@ -37,6 +37,14 @@ public class FrmPagamento extends javax.swing.JFrame {
         jDesktopPane1 = new javax.swing.JDesktopPane();
         cmdsairActionPerformed = new javax.swing.JButton();
         cmdsairActionPerformed1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane2 = new javax.swing.JTextPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextPane3 = new javax.swing.JTextPane();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextPane4 = new javax.swing.JTextPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -77,7 +85,7 @@ public class FrmPagamento extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_two_white_24dp.png"))); // NOI18N
-        jLabel4.setText("Escolher Voo");
+        jLabel4.setText("Escolher Assento ");
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
@@ -87,7 +95,7 @@ public class FrmPagamento extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_looks_one_white_24dp.png"))); // NOI18N
-        jLabel6.setText("Escolher Assento");
+        jLabel6.setText("Escolher Voo");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -129,8 +137,20 @@ public class FrmPagamento extends javax.swing.JFrame {
             }
         });
 
+        jScrollPane1.setViewportView(jTextPane1);
+
+        jScrollPane2.setViewportView(jTextPane2);
+
+        jScrollPane3.setViewportView(jTextPane3);
+
+        jScrollPane4.setViewportView(jTextPane4);
+
         jDesktopPane1.setLayer(cmdsairActionPerformed, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(cmdsairActionPerformed1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jScrollPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jScrollPane3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jScrollPane4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -142,15 +162,42 @@ public class FrmPagamento extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addComponent(cmdsairActionPerformed1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(49, 49, 49)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addGap(252, 252, 252)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                    .addGap(252, 252, 252)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(337, Short.MAX_VALUE)))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap(578, Short.MAX_VALUE)
+                .addGap(155, 155, 155)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 305, Short.MAX_VALUE)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cmdsairActionPerformed)
                     .addComponent(cmdsairActionPerformed1))
                 .addGap(28, 28, 28))
+            .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                    .addGap(83, 83, 83)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(513, Short.MAX_VALUE)))
         );
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/baseline_work_black_24dp.png"))); // NOI18N
@@ -296,6 +343,14 @@ public class FrmPagamento extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextPane jTextPane2;
+    private javax.swing.JTextPane jTextPane3;
+    private javax.swing.JTextPane jTextPane4;
     // End of variables declaration//GEN-END:variables
 }
