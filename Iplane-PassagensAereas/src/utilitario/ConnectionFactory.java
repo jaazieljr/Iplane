@@ -15,7 +15,6 @@ public class ConnectionFactory {
 
         try {
 
-            //Class.forName(DRIVER);
             System.out.println("Conectado ao banco com sucesso!\n");
             return DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
 

@@ -8,6 +8,7 @@ public class Cliente {
     private String cep;
     private String nasc;
 
+   
 
     public int getId() {
         return id;
@@ -49,6 +50,6 @@ public class Cliente {
         this.nasc = nasc;
     }
 
-      
+       
     
 }
